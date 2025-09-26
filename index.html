@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon-32x32.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>To Do</title>
+</head>
+
+<body>
+    <nav>
+        <div class="header">
+            <div class="part1">
+                <h1>Make your day perfect</h1>
+            </div>
+            <div class="part2">
+                <img src="./android-chrome-192x192.png" alt="">
+            </div>
+            <div class="part3">
+                <h1>Remaining Task: <span id="task1"></span></h1>
+                <h1>Complete Task: <span id="task2"></span></h1>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="input">
+            <input type="time" name="" id="inputTime" required>
+            <input type="text" placeholder="Write a routine" name="" id="inputText" required>
+            <button id="btn">Submit</button>
+        </div>
+        <div class="routineTiles">
+            <div class="uncomplete">
+                <h1>Remianing Tasks</h1>
+                <div class="itemsUncomplete"></div>
+            </div>
+            <div class="complete">
+                <h1>Complete Tasks</h1>
+                <div class="itemscomplete"></div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

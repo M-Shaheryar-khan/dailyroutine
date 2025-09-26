@@ -1,0 +1,375 @@
+@font-face {
+    font-family: rj;
+    src: url(./LeckerliOne-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "rj";
+}
+
+html body {
+    height: 100%;
+    width: 100%;
+    background-color: darkslategray;
+}
+
+nav .header {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    padding: 5px 20px;
+    justify-content: space-between;
+    background-color: black;
+}
+
+nav .header .part1 {
+    width: 33%;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+
+}
+
+nav .header .part2 {
+    width: 33%;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .header .part3 {
+    width: 33%;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .header .part1 h1 {
+    margin-left: 10px;
+    color: white;
+    text-shadow: 0.2vmin 0.5vmin cadetblue;
+    font-size: 4.5vmin;
+}
+
+nav .header .part2 img {
+    height: 20vmin;
+    width: 20vmin;
+}
+
+nav .header .part3 h1 {
+    color: white;
+    text-shadow: 0.2vmin 0.5vmin cadetblue;
+}
+
+.container {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.container .input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .input #inputText {
+    height: 15vmin;
+    width: 50%;
+    border-radius: 50px;
+    text-align: center;
+    background-color: rgba(112, 128, 144, 0.25);;
+    color: white;
+    font-size: 7vmin;
+    margin: 5px;
+    border: none;
+
+}
+.container .input #inputText:focus{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.52);
+    outline: none;
+}
+
+.container .input #inputTime {
+    height: 15vmin;
+    width: 30vmin;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 3vmin;
+    color: white;
+    background-color: rgba(112, 128, 144, 0.25);
+    border: none;
+    padding: 2px 10px;
+}
+
+.container .input button {
+
+    height: 15vmin;
+    width: 20vmin;
+    border-radius: 50px;
+    font-size: 5vmin;
+    color: white;
+    background-color: white;
+    background-color: rgba(112, 128, 144, 0.25);;
+    border: none;
+
+}
+
+.container .routineTiles {
+    height: 100%;
+    margin-top: 2vmin;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    
+}
+.container .routineTiles .uncomplete{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid white;
+    margin: 1px;
+    border-bottom: white;
+}
+.container .routineTiles .uncomplete .itemsUncomplete{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .routineTiles .complete .itemscomplete{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .routineTiles .complete{
+     width: 50%;
+    height: 100%;
+    text-align: center;
+    border-left: 1px solid white;
+    margin: 1px;
+    border-bottom: white;
+}
+.container .routineTiles .card {
+    min-width: calc(100% / 4);
+    max-width:calc(100% / 2);
+    margin-left: 20px;
+    margin-bottom: 2vmin;
+    height: 30vmin;
+    border: 1px solid white;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: #ffffff42;
+    animation: anime;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all ease 2s;
+
+}
+
+@keyframes anime {
+    from {
+        background-image: linear-gradient(to left, #ffffff42, #ffffff67);
+        color: rgba(255, 224, 224, 0.897);
+        scale: 0.98;
+
+    }
+
+    to {
+        background-image: linear-gradient(to left, #ffffff42, #ffffff67);
+        color: white;
+        scale: 1;
+
+
+    }
+}
+
+.container .routineTiles .card .time {
+    height: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 3vmin;
+    border-bottom: 1px solid gray;
+}
+
+.container .routineTiles .card .content {
+    height: 70%;
+    width: 100%;
+    font-size: 3vmin;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.container .routineTiles .icatch{
+    display: flex;
+}
+.container .routineTiles .card i {
+    font-size: 4vmin;
+    color: white;
+    transition: all ease 1s;
+}
+
+.container .routineTiles .card i:hover {
+    font-size: 5vmin;
+    color: red;
+}
+
+@media screen and (max-width:600px) {
+    nav .header {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        padding: 5px 20px;
+        flex-direction: column;
+        background-color: black;
+        justify-content: center;
+    }
+
+    nav .header .part1 {
+        width: 100%;
+        margin-top: 12px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    nav .header .part1 h1 {
+        color: white;
+        text-shadow: 0.2vmin 0.5vmin cadetblue;
+        font-size: 6.7vmin;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    nav .header .part2 {
+        display: none;
+    }
+
+    nav .header .part3 {
+        width: 100%;
+        margin: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .container .input {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .input #inputText {
+        height: 15vmin;
+        width: 70%;
+        border-radius: 20px;
+        text-align: center;
+        background-color: #ffffff7e;
+        color: white;
+        font-size: 4vmin;
+        margin: 5px;
+        border: none;
+
+    }
+
+    .container .input #inputTime {
+        height: 15vmin;
+        width: 25%;
+        border-radius: 20px;
+        text-align: start;
+        font-size: 3.5vmin;
+        color: white;
+        background-color: #ffffff42;
+        border: none;
+        padding: 1px 3px;
+    }
+
+    .container .input button {
+        height: 15vmin;
+        width: 88vmin;
+        border-radius: 20px;
+        font-size: 5vmin;
+        color: white;
+        background-color: white;
+        background-color: #ffffff42;
+        border: none;
+
+    }
+
+    .container .routineTiles {
+        height: 100%;
+        margin-top: 2vmin;
+        width: 100%;
+    }
+
+    .container .routineTiles .card {
+        min-width: 88%;
+        max-width: 90%;
+        margin-bottom: 2vmin;
+        height: 50vmin;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        background-color: #ffffff42;
+    }
+
+    .container .routineTiles .card .time {
+        height: 30%;
+        width: 100%;
+        text-align: center;
+        font-size: 3.5vmin;
+        border-bottom: 4px solid gray;
+    }
+
+    .container .routineTiles .card .content {
+        height: 70%;
+        width: 100%;
+        font-size: 4vmin;
+        color: whitesmoke;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .routineTiles .card i {
+        font-size: 8vmin;
+        color: white;
+        transition: all ease 2s;
+    }
+
+    .container .routineTiles .card i:focus {
+        font-size: 10vmin;
+        color: red;
+    }
+}
