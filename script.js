@@ -5,13 +5,15 @@ let tile = document.querySelector('.itemsUncomplete');
 let ctile = document.querySelector('.itemscomplete');
 let RtaskCount = document.querySelector('#task1');
 let CtaskCount = document.querySelector('#task2');
+const now = new Date();
 let arr = [];
 let cArr = [];
 RtaskCount.innerText = '0';
 CtaskCount.innerText = '0';
 btn.addEventListener('click', () => {
     let textValue = text.value;
-    let timeValue = (time.value != "") ? time.value : "Not set";
+    let timeValue = (time.value != "") ? time.value : `${now.getHours()}:${now.getMinutes()}`;
+    if(textValue!=""){
     arr.unshift({
         time: timeValue,
         content: textValue
@@ -19,6 +21,11 @@ btn.addEventListener('click', () => {
     text.value = "";
     time.value = "";
     update(arr, cArr);
+}
+else{
+Swal.fire('Hey', 'Write your routine first. then Submit.', 'warning');
+
+}
 });
 function update(arr, cArr) {
     tile.innerHTML = "";
@@ -72,18 +79,3 @@ function completeTask(id){
     arr.splice(id,1);
     update(arr , cArr);
 }
-
-
-
-
-
-
-// function deleteCard(id) {
-//     cArr.unshift(arr[id])
-//     arr.splice(id, 1);
-//     update(arr, cArr);
-// }
-// function compCards(id) {
-//     cArr.splice(id, 1);
-//     update(arr, cArr);
-// }

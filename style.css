@@ -13,7 +13,7 @@
 html body {
     height: 100%;
     width: 100%;
-    background-color: darkslategray;
+    background-color: white;
 }
 
 nav .header {
@@ -22,7 +22,7 @@ nav .header {
     display: flex;
     padding: 5px 20px;
     justify-content: space-between;
-    background-color: black;
+    background-color: white;
 }
 
 nav .header .part1 {
@@ -54,8 +54,8 @@ nav .header .part3 {
 
 nav .header .part1 h1 {
     margin-left: 10px;
-    color: white;
-    text-shadow: 0.2vmin 0.5vmin cadetblue;
+    color: black;
+    text-shadow: 0.2vmin 0.5vmin rgba(15, 91, 94, 0.527);
     font-size: 4.5vmin;
 }
 
@@ -65,8 +65,8 @@ nav .header .part2 img {
 }
 
 nav .header .part3 h1 {
-    color: white;
-    text-shadow: 0.2vmin 0.5vmin cadetblue;
+    color: rgb(26, 24, 24);
+    text-shadow: 0.2vmin 0.5vmin rgba(39, 49, 49, 0.384);
 }
 
 .container {
@@ -87,14 +87,16 @@ nav .header .part3 h1 {
     width: 50%;
     border-radius: 50px;
     text-align: center;
-    background-color: rgba(112, 128, 144, 0.25);;
-    color: white;
+    background-color: rgba(112, 128, 144, 0.25);
+    ;
+    color: rgba(0, 0, 0, 0.514);
     font-size: 7vmin;
     margin: 5px;
     border: none;
 
 }
-.container .input #inputText:focus{
+
+.container .input #inputText:focus {
     border-bottom: 1px solid rgba(255, 255, 255, 0.52);
     outline: none;
 }
@@ -105,7 +107,7 @@ nav .header .part3 h1 {
     border-radius: 50px;
     text-align: center;
     font-size: 3vmin;
-    color: white;
+    color: black;
     background-color: rgba(112, 128, 144, 0.25);
     border: none;
     padding: 2px 10px;
@@ -117,9 +119,8 @@ nav .header .part3 h1 {
     width: 20vmin;
     border-radius: 50px;
     font-size: 5vmin;
-    color: white;
-    background-color: white;
-    background-color: rgba(112, 128, 144, 0.25);;
+    color: rgba(0, 0, 0, 0.699);
+    background-color: rgba(112, 128, 144, 0.25);
     border: none;
 
 }
@@ -131,50 +132,55 @@ nav .header .part3 h1 {
     padding: 5px;
     display: flex;
     justify-content: center;
-    color: white;
-    
+    color: black;
+
 }
-.container .routineTiles .uncomplete{
+
+.container .routineTiles .uncomplete {
     width: 50%;
     height: 100%;
     text-align: center;
-    border-right: 1px solid white;
+    border-right: 1px solid black;
     margin: 1px;
-    border-bottom: white;
+    border-bottom: rgb(116, 114, 114);
 }
-.container .routineTiles .uncomplete .itemsUncomplete{
+
+.container .routineTiles .uncomplete .itemsUncomplete {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.container .routineTiles .complete .itemscomplete{
+
+.container .routineTiles .complete .itemscomplete {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.container .routineTiles .complete{
-     width: 50%;
+
+.container .routineTiles .complete {
+    width: 50%;
     height: 100%;
     text-align: center;
-    border-left: 1px solid white;
+    border-left: 1px solid black;
     margin: 1px;
-    border-bottom: white;
+    border-bottom: black;
 }
+
 .container .routineTiles .card {
     min-width: calc(100% / 4);
-    max-width:calc(100% / 2);
+    max-width: calc(100% / 2);
     margin-left: 20px;
     margin-bottom: 2vmin;
     height: 30vmin;
-    border: 1px solid white;
-    border-radius: 50px;
+    border: 1px solid rgba(141, 139, 139, 0.644);
+    border-radius: 40px;
     overflow: hidden;
     padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: black;
     background-color: #ffffff42;
     animation: anime;
     animation-timing-function: linear;
@@ -188,14 +194,14 @@ nav .header .part3 h1 {
 @keyframes anime {
     from {
         background-image: linear-gradient(to left, #ffffff42, #ffffff67);
-        color: rgba(255, 224, 224, 0.897);
+        color: rgba(0, 0, 0, 0.897);
         scale: 0.98;
 
     }
 
     to {
         background-image: linear-gradient(to left, #ffffff42, #ffffff67);
-        color: white;
+        color: rgb(172, 168, 168);
         scale: 1;
 
 
@@ -206,7 +212,7 @@ nav .header .part3 h1 {
     height: 30%;
     width: 100%;
     text-align: center;
-    font-size: 3vmin;
+    font-size: 2vmin;
     border-bottom: 1px solid gray;
 }
 
@@ -214,17 +220,19 @@ nav .header .part3 h1 {
     height: 70%;
     width: 100%;
     font-size: 3vmin;
-    color: whitesmoke;
+    color: rgba(0, 0, 0, 0.747);
     text-align: center;
     display: flex;
     justify-content: center;
 }
-.container .routineTiles .icatch{
+
+.container .routineTiles .icatch {
     display: flex;
 }
+
 .container .routineTiles .card i {
     font-size: 4vmin;
-    color: white;
+    color: rgb(104, 101, 101);
     transition: all ease 1s;
 }
 
@@ -240,7 +248,7 @@ nav .header .part3 h1 {
         display: flex;
         padding: 5px 20px;
         flex-direction: column;
-        background-color: black;
+        background-color: white;
         justify-content: center;
     }
 
@@ -252,7 +260,8 @@ nav .header .part3 h1 {
     }
 
     nav .header .part1 h1 {
-        color: white;
+        color: black;
+        text-shadow: 0.2vmin 0.5vmin rgba(15, 91, 94, 0.527);
         text-shadow: 0.2vmin 0.5vmin cadetblue;
         font-size: 6.7vmin;
         margin-left: auto;
@@ -291,8 +300,9 @@ nav .header .part3 h1 {
         width: 70%;
         border-radius: 20px;
         text-align: center;
-        background-color: #ffffff7e;
-        color: white;
+        background-color: rgba(112, 128, 144, 0.25);
+        ;
+        color: rgba(0, 0, 0, 0.514);
         font-size: 4vmin;
         margin: 5px;
         border: none;
@@ -305,8 +315,8 @@ nav .header .part3 h1 {
         border-radius: 20px;
         text-align: start;
         font-size: 3.5vmin;
-        color: white;
-        background-color: #ffffff42;
+        color: black;
+        background-color: rgba(112, 128, 144, 0.25);
         border: none;
         padding: 1px 3px;
     }
@@ -317,8 +327,8 @@ nav .header .part3 h1 {
         border-radius: 20px;
         font-size: 5vmin;
         color: white;
-        background-color: white;
-        background-color: #ffffff42;
+        color: rgba(0, 0, 0, 0.699);
+        background-color: rgba(112, 128, 144, 0.25);
         border: none;
 
     }
@@ -340,7 +350,7 @@ nav .header .part3 h1 {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        color: white;
+        color: black;
         background-color: #ffffff42;
     }
 
@@ -349,22 +359,22 @@ nav .header .part3 h1 {
         width: 100%;
         text-align: center;
         font-size: 3.5vmin;
-        border-bottom: 4px solid gray;
+        border-bottom: 1px solid gray;
     }
 
     .container .routineTiles .card .content {
         height: 70%;
         width: 100%;
         font-size: 4vmin;
-        color: whitesmoke;
+        color: rgba(0, 0, 0, 0.747);
         text-align: center;
         display: flex;
         justify-content: center;
     }
 
     .container .routineTiles .card i {
-        font-size: 8vmin;
-        color: white;
+        font-size: 6vmin;
+        color: rgb(104, 101, 101);
         transition: all ease 2s;
     }
 
